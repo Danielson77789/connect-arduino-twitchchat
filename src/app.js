@@ -14,10 +14,12 @@ const client = new tmi.Client({
         reconnect: true
     },
     identify: {
-        username: 'SlabbnSlothsFirstBot',
-        password: 'oauth:uoxa1ohv2stvevxnb0drk8ivhnlc2u'
+        // Put log in info below
+        username: 'username',
+        password: 'password'
     },
-    channels: ['SlabbnSloth']
+    // Put channel name here
+    channels: ['Channel Name']
 });
 
 board.on("ready", function() {
@@ -32,7 +34,7 @@ board.on("ready", function() {
             //Do something when !slow is typed in twitch chat
 
         } else if (message.toLowerCase() === '!fast') {
-            led.off();
+            //Do something when !fast is typed in twitch chat
 
         }
     
